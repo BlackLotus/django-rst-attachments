@@ -37,7 +37,7 @@ class AttachedFile(models.Model):
 
 class AttachedImage(ImageModel):
     name = models.CharField(max_length=255)
-    link_to = models.URLField(verify_exists=False,blank=True)
+    link_to = models.URLField(blank=True)
     rows = models.PositiveIntegerField(default=5)
     columns = models.PositiveIntegerField(default=4)
     float = models.CharField(max_length=20,default='left',choices=(
